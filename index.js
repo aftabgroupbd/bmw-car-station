@@ -99,7 +99,7 @@ async function run() {
             const result = await productsCollection.insertOne(product);
             res.json(result);
         });
-        // subscribe api 
+        // subscribe by email api 
         app.post('/subscribe', async (req, res) => {
             const subscribe = req.body;
             const result = await subscribesCollection.insertOne(subscribe);
